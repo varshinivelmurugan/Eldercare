@@ -1,0 +1,175 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/gradient"
+    android:fadingEdge="horizontal"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!-- Text view for cal Text -->
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:shadowColor="@android:color/black"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:text="Enter details to suggest diet (calorie) to be taken"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="25sp"
+            android:fontFamily="@font/baloo" />
+
+        <!-- Textview for calculator text -->
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:text="Calorie calculate"
+            android:textColor="@android:color/white"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/aclonica"/>
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="30dp"
+            android:text="GENDER"
+            android:textSize="23dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold|italic"
+            android:fontFamily="@font/baloo"/>
+        <RadioGroup
+            android:id="@+id/Gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/baloo">
+            <RadioButton
+                android:id="@+id/M"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:checked="true"
+                android:fontFamily="@font/baloo"/>
+            <RadioButton
+                android:id="@+id/F"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:fontFamily="@font/baloo"/>
+        </RadioGroup>
+
+        <!-- Textview for WEIGHT(KG) text -->
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="30dp"
+            android:text="WEIGHT (KG)"
+            android:textSize="23dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold|italic"
+            android:fontFamily="@font/baloo" />
+
+        <!-- Edit text for entering weight with hint in kgs -->
+        <EditText
+            android:id="@+id/et1"
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="IN KGs"
+            android:ems="10"
+            android:fadingEdgeLength="10dp"
+            android:inputType="numberDecimal"
+            android:textAlignment="center" >
+            <requestFocus />
+        </EditText>
+
+        <!-- Text view for HEIGHT(CM)text -->
+        <TextView
+            android:id="@+id/tv31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="30dp"
+            android:text="HEIGHT (CM)"
+            android:textSize="23dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold|italic"
+            android:fontFamily="@font/baloo" />
+
+        <!-- Edit text for entering height with hint in cm -->
+        <EditText
+            android:id="@+id/et2"
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="IN CMs"
+            android:ems="10"
+            android:inputType="numberDecimal" >
+        </EditText>
+        <TextView
+            android:id="@+id/tv32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="40dp"
+            android:text="AGE"
+            android:textSize="23dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold|italic"
+            android:fontFamily="@font/baloo" />
+
+        <!-- Edit text for entering height with hint in cm -->
+        <EditText
+            android:id="@+id/et3"
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="age"
+            android:ems="10"
+            android:inputType="numberDecimal" >
+        </EditText>
+        <!-- Button for calculating the formula, when pressed, with calculate written over it -->
+        <Button
+            android:id="@+id/ib1"
+            android:layout_width="198dp"
+            android:layout_height="51dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:fadingEdge="vertical"
+            android:longClickable="true"
+            android:nextFocusRight="@color/black"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:backgroundTint="#B7E91E63"
+            android:fontFamily="@font/baloo"
+            android:text="Calculate"
+            android:visibility="visible" />
+
+        <!-- Text view for showing result -->
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="20dp"
+            android:text=""
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_orange_dark"/>
+
+
+    </LinearLayout>
+</ScrollView>

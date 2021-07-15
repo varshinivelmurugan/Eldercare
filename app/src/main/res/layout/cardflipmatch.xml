@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:weightSum="3"
+android:orientation="vertical"
+    >
+<LinearLayout
+    android:id="@+id/first"
+    android:layout_height="100dp"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="4">
+    <ImageView
+        android:layout_height="100dp"
+        android:layout_width="match_parent"
+        android:src="@drawable/qmleaf"
+        android:scaleType="centerInside"
+        android:layout_weight="1"
+
+        android:layout_marginRight="4dp"
+        android:id="@+id/a1"/>
+
+    <ImageView
+        android:layout_height="100dp"
+        android:layout_width="match_parent"
+        android:src="@drawable/qmleaf"
+        android:layout_weight="1"
+        android:layout_marginRight="4dp"
+        android:scaleType="centerInside"
+        android:id="@+id/a2"/>
+    <ImageView
+        android:layout_height="100dp"
+        android:layout_width="match_parent"
+        android:src="@drawable/qmleaf"
+        android:layout_weight="1"
+        android:layout_marginRight="4dp"
+        android:scaleType="centerInside"
+        android:id="@+id/a3"/>
+    <ImageView android:layout_height="100dp"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_marginRight="4dp"
+        android:src="@drawable/qmleaf"
+        android:scaleType="centerInside"
+        android:id="@+id/a4"/>
+
+</LinearLayout>
+<LinearLayout
+    android:id="@+id/second"
+    android:layout_below="@+id/first"
+    android:layout_marginTop="10dp"
+    android:layout_height="100dp"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="4">
+    <ImageView android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:src="@drawable/qmleaf"
+        android:scaleType="centerInside"
+        android:layout_marginRight="4dp"
+        android:layout_weight="1"
+        android:id="@+id/b1"/>
+
+    <ImageView android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:src="@drawable/qmleaf"
+        android:layout_weight="1"
+        android:layout_marginRight="4dp"
+        android:scaleType="centerInside"
+        android:id="@+id/b2"/>
+    <ImageView android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:src="@drawable/qmleaf"
+        android:layout_weight="1"
+        android:scaleType="centerInside"
+        android:layout_marginRight="4dp"
+        android:id="@+id/b3"/>
+    <ImageView android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_marginRight="4dp"
+        android:src="@drawable/qmleaf"
+        android:scaleType="centerInside"
+        android:id="@+id/b4"/>
+
+</LinearLayout>
+<LinearLayout android:layout_height="100dp"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="4"
+    android:layout_below="@+id/second"
+    android:layout_marginTop="10dp">
+    <ImageView android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:src="@drawable/qmleaf"
+        android:scaleType="centerInside"
+        android:layout_weight="1"
+        android:layout_marginRight="4dp"
+        android:id="@+id/c1"/>
+
+    <ImageView android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:src="@drawable/qmleaf"
+        android:layout_weight="1"
+        android:layout_marginRight="4dp"
+        android:scaleType="centerInside"
+        android:id="@+id/c2"/>
+    <ImageView android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:src="@drawable/qmleaf"
+        android:layout_weight="1"
+        android:layout_marginRight="4dp"
+        android:scaleType="centerInside"
+        android:id="@+id/c3"/>
+    <ImageView android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_marginRight="4dp"
+        android:src="@drawable/qmleaf"
+        android:scaleType="centerInside"
+        android:id="@+id/c4"/>
+</LinearLayout>
+</LinearLayout>
+

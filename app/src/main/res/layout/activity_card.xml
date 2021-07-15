@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient"
+    tools:context=".card">
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:shadowColor="@android:color/black"
+        android:shadowDx="4"
+        android:shadowDy="4"
+        android:text="CARD MATCHING GAME"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="35sp"
+        app:fontFamily="@font/baloo" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/counttime"
+        android:layout_marginTop="50dp"
+        app:fontFamily="@font/baloo"
+        android:text="SCORE: 0"
+        android:textSize="32dp"
+        android:gravity="left"/>
+    <TextView
+        android:id="@+id/counttime"
+        android:layout_width="match_parent"
+        android:gravity="right"
+        android:textSize="32dp"
+        android:layout_toRightOf="@id/score"
+        android:text="TIMER:0"
+        app:fontFamily="@font/baloo"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="100dp"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:weightSum="3"
+        tools:context=".MainActivity"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/cardflipmatch"
+            android:layout_width="wrap_content"
+            android:layout_height="380dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+
+
+    </LinearLayout>
+</LinearLayout>
+

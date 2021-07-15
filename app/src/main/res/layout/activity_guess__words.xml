@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/Color3"
+tools:context=".Guess_Words">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/Color1"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:text="GUESS THE WORDS" />
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="10sp"
+        android:layout_below="@id/textView"
+        android:background="@color/Color1"
+        android:gravity="center"
+        android:text="BEGIN"
+        android:onClick="EnterGame"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        />
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/Color1"
+        android:layout_margin="10sp"
+        android:layout_below="@id/button1"
+        android:gravity="center"
+        android:text="BACK"
+        android:onClick="Close"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        />
+</RelativeLayout>

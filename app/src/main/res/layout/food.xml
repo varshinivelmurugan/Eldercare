@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+<TextView
+    android:id="@+id/tv1"
+    android:layout_width="400dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:paddingLeft="15dp"
+    android:paddingTop="10dp"
+    android:shadowColor="@android:color/black"
+    android:shadowDx="4"
+    android:shadowDy="4"
+    android:text="CHOOSE FOOD ITEMS YOU HAVE TAKEN"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:textColor="@android:color/black"
+    android:textSize="25sp"
+    android:fontFamily="@font/baloo"
+    android:typeface="serif"
+    android:background="#CD4AFAD7"
+    />
+<ImageView
+android:id="@+id/simpleImageView"
+android:layout_width="410dp"
+android:layout_height="110dp"
+android:background="#CD4AFAD7"
+android:src="@drawable/dietdisp"
+android:padding="10dp"/>
+<androidx.recyclerview.widget.RecyclerView
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:scrollbars="vertical"
+android:id="@+id/recyclerView"
+tools:context=".FoodActivity">
+
+</androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.eldercareapp">
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".performanceGraph"></activity>
+        <activity android:name=".Details" />
+        <activity android:name=".Edit" />
+        <activity android:name=".card" />
+        <activity android:name=".Diet" />
+        <activity android:name=".FoodActivity" />
+        <activity android:name=".AddNote" />
+        <activity android:name=".GratitudeMain" />
+        <activity android:name=".GuessWords_mainpg" />
+        <activity android:name=".Guess_Words" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".login" />
+        <activity android:name=".ListExercises" />
+        <activity android:name=".ViewExercise" />
+        <activity android:name=".guesscolor" />
+        <activity android:name=".register">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

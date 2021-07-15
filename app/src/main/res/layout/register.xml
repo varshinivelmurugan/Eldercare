@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ExtraText">
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="match_parent"
+        android:layout_height="211dp"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/login_bg" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/userName"
+        android:hint="Username"
+        android:textSize="25dp"
+        android:layout_below="@+id/imageview"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mobno"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        android:layout_marginTop="50dp"
+        android:textSize="25dp"
+        android:layout_below="@+id/userName"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password"
+        android:hint="Password"
+        android:layout_marginTop="50dp"
+        android:textSize="25dp"
+        android:layout_below="@+id/mobno"
+        />
+
+    <Button
+        android:id="@+id/btnreg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_marginTop="47dp"
+        android:background="#CD4AFAD7"
+        android:text="Register"
+        android:textAllCaps="false"
+        android:textSize="25dp"
+        app:fontFamily="@font/baloo" />
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnreg"
+        android:layout_marginTop="36dp"
+        android:background="#CD4AFAD7"
+        android:text="Existing user?\n Login "
+        android:textAllCaps="false"
+        android:textSize="25dp"
+        app:fontFamily="@font/baloo" />
+
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageview"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="129dp"
+        android:layout_marginBottom="79dp"
+        android:text="REGISTER"
+        android:textSize="36sp"
+        app:fontFamily="@font/baloo" />
+</RelativeLayout>
